@@ -9,6 +9,4 @@ In this section you can find a cheet sheet resulting from my work notes. Hope it
 @ref2 : [parse CSV doc](http://csv.adaltas.com/parse/)
   
 NOTES:
-    ! CAVEAT: using withIndex associated with transformSeries is very dangerous!! It seems failing the referencing
-
-*/
+   ❗ CAVEAT: using withIndex associated with transformSeries is very dangerous!! It seems failing the referencing
