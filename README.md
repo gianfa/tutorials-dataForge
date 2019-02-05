@@ -1,4 +1,4 @@
-  # A gentle introduction to dataForge dataFrames
+  # A gentle introduction to data-forge dataFrames
  As the title says, this is just a very smooth introduction to dataForge dataframe in JS.
  [DataForge](https:github.com/data-forge) is a wonderful library by Ashley Davis.
  Here the very basics are presented, in order to make you able to start using it and step by step become
