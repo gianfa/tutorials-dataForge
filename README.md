@@ -3,7 +3,7 @@
  [DataForge](https://github.com/data-forge/data-forge-ts) is a wonderful library by Ashley Davis.
  Here the very basics are presented, in order to make you able to start using it and step by step become
  autonomous.
- The structure of this introduction follows a targets path, instead of a skill/path. I think this will be mor
+ The structure of this introduction follows a targets path, instead of a skill/functions path. I think this will be mor
  easy to follow. Here it is.
   1. Your first dataFrame [creation, basic operations]
   2. What if we want to know how many single people are there? [filtering]
