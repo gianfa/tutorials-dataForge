@@ -1,9 +1,9 @@
- # A gentle introduction to dataForge dataFrames
+  # A gentle introduction to dataForge dataFrames
  As the title says, this is just a very smooth introduction to dataForge dataframe in JS.
- [DataForge](https://github.com/data-forge/data-forge-ts) is a wonderful library by Ashley Davis.
+ [DataForge](https:github.com/data-forge) is a wonderful library by Ashley Davis.
  Here the very basics are presented, in order to make you able to start using it and step by step become
  autonomous.
- The structure of this introduction follows a targets path, instead of a skill/functions path. I think this will be more
+ The structure of this introduction follows a targets path, instead of a skill/path. I think this will be more
  easy to follow. Here it is.
   1. Your first dataFrame [creation, basic operations]
   2. What if we want to know how many single people are there? [filtering]
@@ -50,7 +50,7 @@ console.log(df.toString());
 ```
 
  ### Drop a column
- It seems some columns have "unknown" value in every records, better to drop them.
+ It seems some columns have "unknown" value in every records, better to [drop](https://github.com/data-forge/data-forge-ts/blob/master/docs/guide.md#removing-columns) them.
 ```javascript
 df = df.dropSeries(["contact", "poutcome"]);
 console.log(df.toString());
@@ -59,7 +59,7 @@ console.log(df.toString());
  ## 2. What if we want to know how many single people are there?
 
  ### Counting records
- First of all let's count the number of people in this dataset.
+ First of all let's [count](https://github.com/data-forge/data-forge-ts/blob/master/docs/guide.md#aggregate) the number of people in this dataset.
  Nowing that the number of people is equal to the number of rows it is quite easy.
 ```javascript
 const nPeople = df.count();
@@ -68,7 +68,7 @@ console.log(`There are ${nPeople} people in this dataset`);
 
  ### Filter records
  Who are the singles in here?
- It's just about to ask "Gimme all the rows, WHERE each row.marital is 'single' ".
+ It's just about to ask "Gimme all the rows, [WHERE](https://github.com/data-forge/data-forge-ts/blob/master/docs/guide.md#filtering) each row.marital is 'single' ".
 ```javascript
 const df_singles = df.where( row => row.marital === 'single');
 console.log(`Here come the unmarried ones!\n${df_singles.toString()}`);
@@ -86,7 +86,7 @@ console.log(`There are ${nSingles} singles inside this dataset`);
 console.log(`...and they are ${parseInt(100*nSingles/nPeople)}% of this dataset`);
 ```
 
- If we don't want to spread variables around we can do all in one chain.
+ If we don't want to spread variables around we can do all in one [chain](https://github.com/data-forge/data-forge-ts/blob/master/docs/guide.md#immutability-and-chained-functions).
 ```javascript
 nPeople_chained = df.where( row => row.marital === 'single').count();
 ```
@@ -101,14 +101,15 @@ console.log(`Introducing you the single administrative employees\n${df_singles_a
 ```
 
  ### Take a field
- In order to compute the average of the balance, we need to extract that column
- This is possible getting it as a Series, by _getSeries_ .
+ In order to compute the average of the balance, we need to extract that column.
+ This is possible getting it as a Series, by [_getSeries_](https://github.com/data-forge/data-forge-ts/blob/master/docs/guide.md#extracting-columns-and-series-from-a-dataframe) .
 ```javascript
 const df_singles_admin_balance = df_singles_admin.getSeries('balance');
 console.log(`... this is their balance\n${df_singles_admin_balance.toString()}`);
 ```
 
  ### Summing along a column
+ Now [sum](https://data-forge.github.io/data-forge-ts/classes/series.html#sum) all column values.
 ```javascript
 const singlesAdminsTotPay = df_singles_admin_balance.sum();
 console.log(`... having a total equal to \n${singlesAdminsTotPay}`);
@@ -120,7 +121,7 @@ console.log(`... so the average balance is \n${(singlesAdminsTotPay/df_singles_a
 ```
 
  You have many ways to do it, in facts.
- There is a very easy dedicated function average().
+ There is a very easy dedicated function [_average_](https://data-forge.github.io/data-forge-ts/classes/series.html#average).
 ```javascript
 console.log(`... still the balance is \n${(df_singles_admin_balance.average())}`);
 ```
