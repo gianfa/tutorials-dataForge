@@ -91,7 +91,7 @@ console.log(`...and they are ${parseInt(100*nSingles/nPeople)}% of this dataset`
 nPeople_chained = df.where( row => row.marital === 'single').count();
 ```
 
- ## What if we want to know how much is the average single admins balance?
+ ## 3. What if we want to know how much is the average single admins balance?
  We now have a double condition to check, let's see how.
 
  ### Filter records, multiple condition
