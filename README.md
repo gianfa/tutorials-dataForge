@@ -1,3 +1,9 @@
+ # Gists to get started
+ * [Gently learning Data-forge by questions - beginner](https://gist.github.com/gianfa/2abfb2c60a175cfc610109275018d63a)
+ * [Gently learning Data-forge by questions - intermediate](https://gist.github.com/gianfa/1ac10016a678b609a536b4877f4ba810)
+  
+  __________________________________________-
+  
   # A gentle introduction to data-forge dataFrames
  As the title says, this is just a very smooth introduction to dataForge dataframe in JS.
  [DataForge](https://github.com/data-forge/data-forge-ts) is a wonderful library by Ashley Davis.
