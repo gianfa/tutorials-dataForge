@@ -4,8 +4,8 @@
   __________________________________________
   
   # A workbook-like script
- Sometimes you can have some doubt about the use of a particular function. Here there is script I use in order to play with the library and make my tries.   
-   * [Workbook script] (https://github.com/gianfa/tutorials-dataForge/blob/master/dataForge_workbook.js)
+ Sometimes you can have some doubts about the use of a particular function. Here there is a script I use in order to play with the library and make my tries.   
+   * [Workbook script](https://github.com/gianfa/tutorials-dataForge/blob/master/dataForge_workbook.js)
   __________________________________________
   
   # A gentle introduction to data-forge dataFrames
