@@ -1,7 +1,11 @@
  # Gists to get started
  * [Gently learning Data-forge by questions - beginner](https://gist.github.com/gianfa/2abfb2c60a175cfc610109275018d63a)
  * [Gently learning Data-forge by questions - intermediate](https://gist.github.com/gianfa/1ac10016a678b609a536b4877f4ba810)
+  __________________________________________
   
+  # A workbook-like script
+ Sometimes you can have some doubt about the use of a particular function. Here there is script I use in order to play with the library and make my tries.   
+   * [Workbook script] (https://github.com/gianfa/tutorials-dataForge/blob/master/dataForge_workbook.js)
   __________________________________________
   
   # A gentle introduction to data-forge dataFrames
